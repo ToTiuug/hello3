@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="邱雨桐 QIU YUTONG 치우위퉁 — 中韩双语个人作品集">
+<title>邱雨桐 · Portfolio</title>
+<style>
+:root{--cream:#f6f1e7;--paper:#fffdf7;--green:#193f32;--green2:#315b49;--sage:#dce5d9;--ink:#23342b;--muted:#6f7a70;--line:#d9dfd4;--accent:#b66a43}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,"Noto Sans SC","Noto Sans KR",system-ui,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1120px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(246,241,231,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 0}.brand{font-weight:800;letter-spacing:.03em;color:var(--green)}.navlinks{display:flex;gap:22px;align-items:center;font-size:14px;color:var(--green2)}.navlinks a:hover{color:var(--accent)}.lang{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:30px;padding:5px 10px}.hero{padding:74px 0 54px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700}.hero h1{font-size:clamp(40px,7vw,74px);line-height:1.05;letter-spacing:-.04em;margin:15px 0 8px;color:var(--green)}.namekr{font-size:22px;color:var(--green2);margin-bottom:20px}.intro{max-width:650px;font-size:17px}.subintro{color:var(--muted);font-size:15px;margin-top:8px}.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{border-radius:28px;padding:11px 19px;border:1px solid var(--green);display:inline-flex;align-items:center;justify-content:center;font-size:14px}.btn.primary{background:var(--green);color:var(--paper)}.btn.light{background:transparent;color:var(--green)}.btn:hover{opacity:.85}.hero-art{background:var(--sage);border-radius:26px;min-height:290px;padding:30px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.scene-motion{position:relative;width:100%;min-height:220px;display:flex;align-items:center;justify-content:center}.studio-caption{margin:14px 2px 0;font-size:13px;color:var(--muted);line-height:1.55;text-align:center}.hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;background:#f4dfc5;opacity:.7}.hero-art:before{width:150px;height:150px;top:-25px;right:-20px}.hero-art:after{width:90px;height:90px;bottom:-20px;left:-10px}.desk{position:relative;z-index:1;width:min(100%,300px);background:#c49a70;height:150px;border-radius:10px 10px 6px 6px;box-shadow:0 14px 0 #a77c56}.screen{position:absolute;left:50%;top:-86px;transform:translateX(-50%);width:190px;height:120px;background:#f8f5eb;border:9px solid var(--green);border-radius:10px;display:flex;align-items:center;justify-content:center}.screen.second{width:116px;height:98px;left:calc(50% - 116px);top:-73px;border-width:7px;z-index:-1}.screen.second svg{width:88px}.screen svg{width:145px}.plant{position:absolute;right:-30px;bottom:10px;font-size:48px}.cup{position:absolute;left:-20px;bottom:10px;font-size:30px}.character{position:absolute;z-index:2;bottom:7px;left:50%;transform:translateX(-50%);width:78px;height:80px;border-radius:38px 38px 20px 20px;background:#47765d;border:4px solid #f1e9dc}.character:before{content:"";position:absolute;width:60px;height:58px;top:-52px;left:5px;background:#f0c9a9;border-radius:50%;border:4px solid #f1e9dc}.character:after{content:"• •";position:absolute;top:-34px;left:18px;color:#37453b;font-weight:bold;letter-spacing:8px}.section{padding:62px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section h2{margin:7px 0 0;color:var(--green);font-size:clamp(26px,4vw,38px);letter-spacing:-.03em}.section-note{color:var(--muted);font-size:14px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}.panel h3{margin:0 0 12px;color:var(--green)}.dual{color:var(--muted);font-size:13px;margin-top:4px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{background:var(--sage);border-radius:22px;padding:6px 11px;font-size:12px;color:var(--green)}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}.project-top{padding:22px;background:var(--sage);min-height:140px;display:flex;flex-direction:column;justify-content:space-between}.project-top .num{font-size:12px;color:var(--green2);letter-spacing:.12em}.project-top .icon{font-size:38px}.project-body{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}.project-body h3{margin:0;color:var(--green);font-size:19px}.project-body p{margin:0;color:var(--muted);font-size:14px}.project-body .btn{margin-top:12px;align-self:flex-start}.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skillbox{background:var(--paper);border:1px solid var(--line);padding:20px;border-radius:16px}.skillbox h3{color:var(--green);margin:0 0 9px}.skillbox p{font-size:14px;color:var(--muted);margin:0}.timeline{display:grid;gap:12px}.timeline-item{display:grid;grid-template-columns:135px 1fr;gap:18px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px}.time{font-size:13px;color:var(--accent);font-weight:700}.timeline-item h3{margin:0;color:var(--green)}.timeline-item p{margin:6px 0 0;color:var(--muted);font-size:14px}.disclaimer{border-left:3px solid var(--accent);padding:12px 15px;color:var(--muted);font-size:13px;background:#f0e6d9;border-radius:0 10px 10px 0;margin:20px 0}.contact{background:var(--green);color:var(--paper);border-radius:22px;padding:32px;display:flex;justify-content:space-between;gap:20px;align-items:center}.contact h2{margin:0 0 8px;color:var(--paper)}.contact p{margin:0;color:#d8e4d9}.contact .btn{border-color:var(--paper);color:var(--green);background:var(--paper);white-space:nowrap}.footer{padding:28px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.modal{display:none;position:fixed;inset:0;z-index:30;background:rgba(15,28,22,.58);padding:20px;align-items:center;justify-content:center}.modal.open{display:flex}.modal-card{background:var(--paper);width:min(600px,100%);max-height:85vh;overflow:auto;border-radius:20px;padding:28px;position:relative}.modal-card h2{color:var(--green);margin:0 35px 16px 0}.modal-card p{color:var(--muted)}.modal-card h3{color:var(--green);margin:18px 0 6px}.close{position:absolute;top:16px;right:16px;border:1px solid var(--line);background:transparent;border-radius:50%;width:36px;height:36px;font-size:20px;color:var(--green)}
+.scene-motion{width:100%;min-height:0;display:block;position:relative;z-index:1}.studio-svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}.hero-art{min-height:0;padding:18px 18px 14px;background:#f7efe4}.studio-caption{position:relative;z-index:1;margin-top:10px}.hero-art:before,.hero-art:after{z-index:0}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:50px 0 35px;gap:28px}.hero-art{min-height:240px}.projects{grid-template-columns:1fr 1fr}.section{padding:46px 0}.navlinks{gap:12px;font-size:12px}.about-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.hero-art{padding:22px 16px;min-height:250px}.scene-motion{min-height:205px}.screen{width:160px;height:106px;top:-76px}.screen.second{width:100px;height:84px;left:calc(50% - 98px);top:-62px}.screen.second svg{width:75px}.desk{width:min(100%,260px)}.studio-caption{font-size:12px}.nav{align-items:flex-start;flex-direction:column;gap:10px;padding:12px 0}.navlinks{width:100%;overflow-x:auto;white-space:nowrap;padding-bottom:4px}.lang{display:none}.hero h1{font-size:46px}.intro{font-size:16px}.projects,.skills-grid{grid-template-columns:1fr}.project-top{min-height:115px}.timeline-item{grid-template-columns:1fr;gap:4px;padding:16px}.contact{flex-direction:column;align-items:flex-start;padding:24px}.section-head{align-items:flex-start;flex-direction:column;gap:5px}.modal-card{padding:23px}}
+
+/* Step 3: studio motion controls (no external assets) */
+.hero-art{perspective:900px}
+.scene-motion{--scene-y:0px;--scene-rx:0deg;--scene-ry:0deg;transform:translate3d(0,var(--scene-y),0) rotateX(var(--scene-rx)) rotateY(var(--scene-ry));transform-origin:center center;will-change:transform}
+.motion-toggle{display:inline-flex;align-items:center;gap:7px;margin:10px auto 0;padding:7px 12px;border:1px solid #9eae9c;border-radius:22px;background:#fffaf2;color:#244636;font-size:12px;position:relative;z-index:2}
+.motion-toggle:focus-visible{outline:2px solid #315b49;outline-offset:3px}
+@media (max-width:600px),(hover:none),(pointer:coarse){.scene-motion{transform:translate3d(0,var(--scene-y),0);will-change:transform}}
+@media (prefers-reduced-motion:reduce){.scene-motion{transform:none!important;will-change:auto}}
+
+/* Step 4: larger studio illustration, smaller text and compact motion control */
+.hero{grid-template-columns:.88fr 1.12fr;gap:28px}
+.hero h1{font-size:clamp(36px,5.4vw,62px)}
+.intro{font-size:15px;line-height:1.55}
+.subintro{font-size:13px;line-height:1.6}
+.namekr{font-size:19px;margin-bottom:14px}
+.cta-row{gap:9px;margin-top:20px}
+.cta-row .btn{font-size:12px;padding:9px 14px}
+.hero-art{flex-direction:column;gap:0;padding:10px 12px 8px;min-height:0}
+.scene-motion{width:100%;min-height:0}
+.studio-svg{width:100%;max-width:640px}
+.studio-caption{font-size:11px;line-height:1.45;margin:5px 0 0;max-width:520px}
+.motion-toggle{font-size:10px;padding:4px 9px;gap:5px;margin:5px auto 0;border-radius:20px;line-height:1.4}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:20px;padding:42px 0 30px}.hero-art{width:100%;max-width:none}.studio-svg{max-width:600px}.intro{font-size:14px}.subintro{font-size:12.5px}}
+@media(max-width:600px){.hero h1{font-size:40px}.namekr{font-size:17px}.intro{font-size:14px}.subintro{font-size:12px}.hero-art{padding:8px 8px 6px;min-height:0}.studio-svg{width:100%;max-width:none}.studio-caption{font-size:10.5px;margin-top:4px}.motion-toggle{font-size:9.5px;padding:4px 8px;margin-top:4px}.cta-row .btn{font-size:11.5px;padding:8px 12px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#home">YUTONG · PORTFOLIO</a><nav class="navlinks" aria-label="主菜单 / 메뉴"><a href="#about">关于 / 소개</a><a href="#projects">项目 / 프로젝트</a><a href="#skills">技能 / 역량</a><a href="#activities">活动 / 활동</a><a href="#contact">联系 / 연락</a></nav><span class="lang">中文 · 한국어</span></div></header>
+<main class="wrap">
+<section class="hero" id="home"><div><div class="eyebrow">Business student · Portfolio</div><h1>邱雨桐<br><span style="font-size:.56em;letter-spacing:.02em">QIU YUTONG</span></h1><div class="namekr">치우위퉁</div><p class="intro">你好，我是邱雨桐，一名经营学专业的大学生。<br>안녕하세요, 경영학을 공부하고 있는 치우위퉁입니다.</p><p class="subintro">关注商业分析、品牌营销与数字化运营，希望通过项目实践不断提升发现问题、分析信息与解决问题的能力。<br>비즈니스 분석, 브랜드 마케팅, 디지털 운영에 관심이 있으며 프로젝트를 통해 문제 발견과 분석·해결 역량을 키우고 있습니다.</p><div class="cta-row"><a class="btn primary" href="#projects">查看项目 / 프로젝트 보기</a><a class="btn light" href="mailto:qiuyutong518@gmail.com">联系我 / 연락하기</a></div></div>
+<div class="hero-art" aria-label="奶油色手绘数据工作室插画">
+  <div class="scene-motion">
+    <svg class="studio-svg" viewBox="0 0 520 420" role="img" aria-labelledby="studioTitle studioDesc" xmlns="http://www.w3.org/2000/svg">
+<title id="studioTitle">Yutong's cozy study nook</title><desc id="studioDesc">An original cozy digital workspace with a desktop monitor showing charts, a small tablet, a rounded student character, books, a leafy plant and a mug.</desc>
+<defs>
+ <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#79664f" flood-opacity=".15"/></filter>
+ <linearGradient id="monitorGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8f0df"/><stop offset="1" stop-color="#d1e0cd"/></linearGradient>
+</defs>
+<!-- airy background blobs -->
+<circle cx="110" cy="95" r="65" fill="#f1dfc7" opacity=".7"/><circle cx="420" cy="315" r="72" fill="#d8e4d5" opacity=".8"/>
+<!-- rug --> <ellipse cx="258" cy="366" rx="198" ry="30" fill="#e3e8d9"/>
+<!-- floor-standing plant, asymmetrical right side -->
+<g transform="translate(430 110)" filter="url(#softShadow)"><path d="M25 142 Q10 98 0 70 Q35 65 45 110 Q43 52 80 28 Q95 67 58 118 Q93 89 110 94 Q102 132 60 143Z" fill="#7c9a74"/><path d="M54 148 Q47 99 42 65" stroke="#547654" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M22 145 L85 145 L77 191 Q51 204 30 191Z" fill="#c98666"/><path d="M30 150 Q53 158 79 150" stroke="#e3b095" stroke-width="4" fill="none"/></g>
+<!-- desktop monitor -->
+<g transform="translate(192 86)" filter="url(#softShadow)"><rect width="194" height="137" rx="15" fill="#214637"/><rect x="10" y="10" width="174" height="117" rx="8" fill="url(#monitorGlow)"/><rect x="23" y="23" width="63" height="10" rx="5" fill="#b4c7b0"/><rect x="23" y="41" width="38" height="6" rx="3" fill="#c8d6c4"/>
+<!-- chart panel --> <rect x="22" y="56" width="78" height="58" rx="7" fill="#f6f5eb"/><path d="M31 101 L44 88 L55 94 L70 73 L88 82" fill="none" stroke="#719575" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 105 H91" stroke="#d4dfd1" stroke-width="2/>
+<!-- bar panel --> <rect x="110" y="23" width="62" height="91" rx="7" fill="#f6f5eb"/><rect x="122" y="77" width="9" height="27" rx="3" fill="#a9bea6"/><rect x="137" y="57" width="9" height="47" rx="3" fill="#7c9d7b"/><rect x="152" y="43" width="9" height="61" rx="3" fill="#d4b38a"/>
+<rect x="78" y="137" width="38" height="8" rx="4" fill="#214637"/><path d="M97 145 L86 159 H108 L97 145Z" fill="#56765d"/><rect x="62" y="159" width="70" height="7" rx="3.5" fill="#214637"/></g>
+<!-- desk top, offset to create a new composition -->
+<g filter="url(#softShadow)"><path d="M82 238 Q88 229 102 231 L411 231 Q425 235 422 248 L411 265 L94 265Z" fill="#d2ad86"/><path d="M105 262 L119 262 L126 343 L111 343Z" fill="#b1845f"/><path d="M386 262 L401 262 L392 344 L377 344Z" fill="#b1845f"/><path d="M113 337 L127 337 L124 349 L110 349Z M379 337 L394 337 L391 349 L377 349Z" fill="#936e51"/></g>
+<!-- tablet / notebook on desk -->
+<g transform="rotate(-8 150 250)" filter="url(#softShadow)"><rect x="116" y="218" width="83" height="51" rx="6" fill="#526c59"/><rect x="122" y="224" width="71" height="39" rx="4" fill="#f5f1e4"/><path d="M130 251 L141 242 L151 248 L164 232 L184 238" fill="none" stroke="#91ad8e" stroke-width="3" stroke-linecap="round"/><rect x="130" y="256" width="47" height="3" rx="1.5" fill="#d5dfd2"/></g>
+<!-- mug -->
+<g transform="translate(336 218)" filter="url(#softShadow)"><rect x="0" y="5" width="35" height="39" rx="8" fill="#c57d5e"/><path d="M33 13 Q53 10 48 29 Q45 39 34 36" fill="none" stroke="#c57d5e" stroke-width="6"/><ellipse cx="17.5" cy="7" rx="16" ry="5" fill="#f2dfc7"/><path d="M9 -3 Q4 -12 12 -17 M21 -3 Q17 -12 25 -17" fill="none" stroke="#b7a38b" stroke-width="2" stroke-linecap="round"/></g>
+<!-- character: standing beside the desk holding a notebook, not seated at center -->
+<g transform="translate(66 230)" filter="url(#softShadow)"><path d="M50 105 Q38 121 38 145 L30 169 Q31 181 43 181 L56 155 L68 134 L74 158 L86 176 Q98 180 101 169 L88 143 Q91 120 77 105Z" fill="#7b8e9e"/><path d="M40 76 Q44 58 67 58 Q88 59 93 79 L90 116 Q79 129 64 129 Q48 126 41 112Z" fill="#6e9274" stroke="#f0e8dc" stroke-width="4"/><ellipse cx="67" cy="49" rx="32" ry="34" fill="#efc7a6" stroke="#f0e8dc" stroke-width="4"/><path d="M36 47 Q31 17 61 12 Q90 13 99 39 Q85 31 76 26 Q62 40 43 43Z" fill="#58463c"/><circle cx="56" cy="49" r="3" fill="#4b433a"/><circle cx="76" cy="49" r="3" fill="#4b433a"/><path d="M61 59 Q67 65 73 59" fill="none" stroke="#a66d60" stroke-width="2.4" stroke-linecap="round"/><circle cx="47" cy="58" r="6" fill="#e6a59a" opacity=".45"/><circle cx="84" cy="58" r="6" fill="#e6a59a" opacity=".45"/>
+<!-- visible arms and hands: left arm bent toward the body, right hand holding notebook -->
+<path d="M45 82 Q30 91 31 107 Q32 116 43 115 L53 104" fill="none" stroke="#6e9274" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M84 82 Q98 86 101 98" fill="none" stroke="#6e9274" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="48" cy="105" rx="8" ry="7" fill="#efc7a6" stroke="#f0e8dc" stroke-width="2"/>
+<ellipse cx="101" cy="99" rx="8" ry="7" fill="#efc7a6" stroke="#f0e8dc" stroke-width="2"/>
+<!-- notebook in hands --> <g transform="rotate(-12 89 96)"><rect x="78" y="80" width="30" height="42" rx="3" fill="#f2e5c8" stroke="#d2b58c" stroke-width="2"/><path d="M84 91 H101 M84 98 H101 M84 105 H97" stroke="#aab9a2" stroke-width="2"/></g>
+<ellipse cx="43" cy="184" rx="18" ry="8" fill="#e8e0d2"/><ellipse cx="87" cy="183" rx="18" ry="8" fill="#e8e0d2"/></g>
+<!-- little decorative books, left foreground -->
+<g transform="translate(210 346) rotate(-3)" filter="url(#softShadow)"><rect x="0" y="0" width="73" height="15" rx="3" fill="#d8b28a"/><rect x="7" y="-15" width="73" height="15" rx="3" fill="#7e9b78"/><rect x="13" y="-11" width="49" height="3" rx="1.5" fill="#dce7d7"/></g>
+<!-- tiny spark dots --> <circle cx="149" cy="170" r="4" fill="#c8aa7d"/><circle cx="407" cy="204" r="4" fill="#a5b89d"/><circle cx="169" cy="321" r="3" fill="#a5b89d"/>
+</svg>
+  </div>
+  <p class="studio-caption">原创工作空间插画：小角色在桌边整理数据，图表、书本与植物代表学习、观察和持续探索。<br>작은 캐릭터가 책상 옆에서 데이터를 정리하는 오리지널 공간입니다. 차트와 책, 식물은 배움과 관찰, 꾸준한 탐구를 상징합니다.</p>
+<button class="motion-toggle" id="motionToggle" type="button" aria-pressed="false" aria-label="暂停插画动态效果">⏸ 暂停动态 / 움직임 일시 정지</button>
+</div></div></section>
+<section class="section" id="about"><div class="section-head"><div><div class="eyebrow">01 · About me</div><h2>自我介绍 / 자기소개</h2></div><div class="section-note">Learning through curiosity and practice</div></div><div class="about-grid"><div class="panel"><h3>个人简介 <span class="dual">· 프로필</span></h3><p>韩国加图立大学经营学系学生，喜欢观察日常商业现象，探索品牌如何与消费者沟通，以及数据如何帮助经营决策。</p><p class="dual">가톨릭대학교 경영학과 학생으로, 일상 속 비즈니스 현상을 관찰하고 브랜드와 소비자의 소통 및 데이터 기반 의사결정에 관심이 있습니다.</p></div><div class="panel"><h3>兴趣领域与目标 <span class="dual">· 관심 분야와 목표</span></h3><p>希望发展商业分析、市场营销与数字化运营方向，未来从事能够结合分析思维、沟通能力和创意执行的工作。</p><p class="dual">비즈니스 분석, 마케팅, 디지털 운영 분야를 발전시키고 분석적 사고·커뮤니케이션·창의적 실행을 함께 활용하는 직무를 목표로 합니다.</p><div class="tags"><span class="tag">Business Analysis</span><span class="tag">Marketing</span><span class="tag">Digital Operations</span></div></div></div></section>
+<section class="section" id="projects"><div class="section-head"><div><div class="eyebrow">02 · Selected projects</div><h2>项目展示 / 프로젝트</h2></div><div class="section-note">Explore the details · 상세 내용 보기</div></div><div class="projects">
+<article class="project"><div class="project-top"><span class="num">PROJECT 01</span><span class="icon">📊</span></div><div class="project-body"><h3>校园消费趋势分析</h3><p class="dual">캠퍼스 소비 트렌드 분석</p><p>通过模拟问卷数据，了解校园消费习惯并整理可执行的洞察。</p><button class="btn light detail-btn" data-project="0">查看详情 / 상세 보기</button></div></article>
+<article class="project"><div class="project-top"><span class="num">PROJECT 02</span><span class="icon">🪴</span></div><div class="project-body"><h3>品牌社交媒体企划</h3><p class="dual">브랜드 소셜 미디어 기획</p><p>围绕目标消费者与品牌定位，构思社交内容主题和传播策略。</p><button class="btn light detail-btn" data-project="1">查看详情 / 상세 보기</button></div></article>
+<article class="project"><div class="project-top"><span class="num">PROJECT 03</span><span class="icon">💡</span></div><div class="project-body"><h3>服务体验改善提案</h3><p class="dual">서비스 경험 개선 제안</p><p>从用户旅程出发，识别服务中的不便并提出改善方案。</p><button class="btn light detail-btn" data-project="2">查看详情 / 상세 보기</button></div></article>
+</div></section>
+<section class="section" id="skills"><div class="section-head"><div><div class="eyebrow">03 · Skills</div><h2>技能 / 역량</h2></div></div><div class="skills-grid"><div class="skillbox"><h3>经营与分析思维 <span class="dual">· 경영·분석 사고</span></h3><p>基础经营知识、问题梳理、逻辑分析、信息整理与商业洞察。</p></div><div class="skillbox"><h3>市场营销 <span class="dual">· 마케팅</span></h3><p>消费者视角、品牌定位理解、内容企划与营销案例分析。</p></div><div class="skillbox"><h3>数字工具 <span class="dual">· 디지털 도구</span></h3><p>Excel 数据整理与基础分析、PowerPoint 演示制作、AI 辅助构思与写作。</p></div><div class="skillbox"><h3>沟通与协作 <span class="dual">· 소통·협업</span></h3><p>基础沟通表达、资料整理、团队协作与任务执行。</p></div></div></section>
+<section class="section" id="activities"><div class="section-head"><div><div class="eyebrow">04 · Activities</div><h2>活动记录 / 활동 기록</h2></div></div><div class="timeline"><div class="timeline-item"><div class="time">2025 · 示例记录</div><div><h3>经营学课程团队项目</h3><p class="dual">경영학 수업 팀 프로젝트</p><p>参与团队讨论、整理资料并协助完成报告与展示，练习分工协作和表达观点。</p></div></div><div class="timeline-item"><div class="time">2025 · 示例记录</div><div><h3>校园活动与交流</h3><p class="dual">교내 활동 및 교류</p><p>参加校园交流活动，提升跨文化沟通能力，积累与不同背景同学合作的经验。</p></div></div><div class="timeline-item"><div class="time">持续进行 · 진행 중</div><div><h3>自我学习与技能提升</h3><p class="dual">자기 학습 및 역량 개발</p><p>持续学习经营相关知识、数字工具与语言表达，尝试将学习成果整理成可展示的作品。</p></div></div></div></section>
+<section class="section" id="contact"><div class="contact"><div><div class="eyebrow" style="color:#c8d8ca">Let's connect</div><h2>保持联系 / 연락해요</h2><p>欢迎交流、合作或分享想法。<br>협업이나 아이디어 교류를 언제든 환영합니다.</p><p style="margin-top:12px">qiuyutong518@gmail.com</p></div><a class="btn" href="mailto:qiuyutong518@gmail.com">发送邮件 / 이메일 보내기 ↗</a></div></section>
+<footer class="footer"><span>© 2026 QIU YUTONG · Personal Portfolio</span><span>가톨릭대학교 경영학과 · Catholic University of Korea</span></footer>
+</main>
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" id="closeModal" aria-label="关闭详情">×</button><div class="eyebrow" id="modalEyebrow">PROJECT DETAILS</div><h2 id="modalTitle"></h2><div id="modalContent"></div></div></div>
+<script>
+const projectDetails=[
+ {title:"校园消费趋势分析 / 캠퍼스 소비 트렌드 분석",content:[{h:"项目背景 / 배경",p:"以校园生活消费为主题，练习从问题出发整理调查信息，观察不同消费类别与习惯。"},{h:"我的职责 / 역할",p:"设计模拟问卷题目、整理数据分类，归纳主要观察结果。"},{h:"方法与收获 / 방법과 배움",p:"尝试使用表格整理数据并总结趋势，学习如何把信息转化为清晰的分析结论。"}]},
+ {title:"品牌社交媒体企划 / 브랜드 소셜 미디어 기획",content:[{h:"项目背景 / 배경",p:"选择一个练习品牌，思考如何通过社交媒体内容与目标消费者建立联系。"},{h:"我的职责 / 역할",p:"构思受众画像、内容主题、发布形式与品牌语气，整理成简要企划。"},{h:"方法与收获 / 방법과 배움",p:"通过案例观察和内容规划，理解品牌定位与社交内容一致性的重要性。"}]},
+ {title:"服务体验改善提案 / 서비스 경험 개선 제안",content:[{h:"项目背景 / 배경",p:"以常见服务场景为例，观察用户流程中可能出现的不便或等待问题。"},{h:"我的职责 / 역할",p:"整理用户旅程，识别关键痛点，并提出改善流程和信息提示的建议。"},{h:"方法与收获 / 방법과 배움",p:"练习从用户角度思考服务设计，形成结构清晰、便于沟通的改善提案。"}]}
+];
+const modal=document.getElementById('projectModal'),title=document.getElementById('modalTitle'),content=document.getElementById('modalContent');document.querySelectorAll('.detail-btn').forEach(btn=>btn.addEventListener('click',()=>{const data=projectDetails[Number(btn.dataset.project)];title.textContent=data.title;content.innerHTML=data.content.map(item=>`<h3>${item.h}</h3><p>${item.p}</p>`).join('');modal.classList.add('open');document.getElementById('closeModal').focus();}));function closeModal(){modal.classList.remove('open')}document.getElementById('closeModal').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+
+// Accessible studio motion: time-based RAF, pause button, hidden-tab pause, reduced-motion support.
+(()=>{
+ const scene=document.querySelector('.scene-motion');
+ const toggle=document.getElementById('motionToggle');
+ const art=document.querySelector('.hero-art');
+ if(!scene||!toggle||!art)return;
+ const reduceQuery=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const touchQuery=window.matchMedia('(max-width: 600px), (hover: none), (pointer: coarse)');
+ let userPaused=false, rafId=null, lastTime=null, elapsed=0;
+ let targetRx=0,targetRy=0,currentRx=0,currentRy=0;
+ const amplitude=10, cycleMs=7000, maxScrollShift=50;
+ const clamp=(v,min,max)=>Math.min(max,Math.max(min,v));
+ function setPausedButton(){
+   const disabledMotion=reduceQuery.matches;
+   toggle.disabled=disabledMotion;
+   toggle.setAttribute('aria-pressed',String(userPaused));
+   toggle.textContent=disabledMotion?'♿ 已尊重减少动态设置 / 동작 줄이기 설정 적용':userPaused?'▶ 恢复动态 / 움직임 재생':'⏸ 暂停动态 / 움직임 일시 정지';
+   toggle.setAttribute('aria-label',disabledMotion?'系统已启用减少动态效果':'切换插画动态效果暂停或播放');
+ }
+ function updateScroll(){
+   if(reduceQuery.matches||userPaused){scene.style.setProperty('--scene-y','0px');return;}
+   const shift=clamp(window.scrollY,0,maxScrollShift);
+   scene.style.setProperty('--scene-y',`${-shift}px`);
+ }
+ function resetTilt(){targetRx=targetRy=currentRx=currentRy=0;scene.style.setProperty('--scene-rx','0deg');scene.style.setProperty('--scene-ry','0deg');}
+ function onPointerMove(e){if(touchQuery.matches||reduceQuery.matches||userPaused)return;
+   const rect=art.getBoundingClientRect();
+   const x=clamp((e.clientX-rect.left)/rect.width,0,1);
+   const y=clamp((e.clientY-rect.top)/rect.height,0,1);
+   targetRy=(x-.5)*60; targetRx=(.5-y)*60;
+ }
+ function onPointerLeave(){targetRx=targetRy=0;}
+ function frame(now){rafId=null;
+   if(document.hidden||userPaused||reduceQuery.matches)return;
+   if(lastTime===null)lastTime=now;
+   const delta=Math.min(now-lastTime,50);lastTime=now;elapsed+=delta;
+   const floatY=Math.sin((elapsed/cycleMs)*Math.PI*2)*amplitude;
+   const scrollShift=clamp(window.scrollY,0,maxScrollShift);
+   scene.style.setProperty('--scene-y',`${floatY-scrollShift}px`);
+   if(!touchQuery.matches){currentRx+=(targetRx-currentRx)*.08;currentRy+=(targetRy-currentRy)*.08;
+     scene.style.setProperty('--scene-rx',`${currentRx}deg`);scene.style.setProperty('--scene-ry',`${currentRy}deg`);
+   }else resetTilt();
+   rafId=requestAnimationFrame(frame);
+ }
+ function stop(){if(rafId!==null){cancelAnimationFrame(rafId);rafId=null;}lastTime=null;}
+ function start(){stop();if(!document.hidden&&!userPaused&&!reduceQuery.matches){lastTime=null;rafId=requestAnimationFrame(frame);}else updateScroll();}
+ toggle.addEventListener('click',()=>{if(reduceQuery.matches)return;userPaused=!userPaused;setPausedButton();if(userPaused){stop();resetTilt();updateScroll();}else start();});
+ art.addEventListener('pointermove',onPointerMove);art.addEventListener('pointerleave',onPointerLeave);
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else start();});
+ window.addEventListener('scroll',updateScroll,{passive:true});
+ const onMotionPreference=()=>{setPausedButton();if(reduceQuery.matches){stop();resetTilt();scene.style.setProperty('--scene-y','0px');}else start();};
+ if(reduceQuery.addEventListener)reduceQuery.addEventListener('change',onMotionPreference);else reduceQuery.addListener(onMotionPreference);
+ const onTouchChange=()=>{resetTilt();};if(touchQuery.addEventListener)touchQuery.addEventListener('change',onTouchChange);else touchQuery.addListener(onTouchChange);
+ setPausedButton();start();
+})();
+</script>
+</body>
+</html>
